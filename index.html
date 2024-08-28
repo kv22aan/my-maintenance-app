@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Maintenance Task Tracker</h1>
+    </header>
+    
+    <main>
+        <section id="report-task">
+            <h2>Report a Task</h2>
+            <form id="taskForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+                
+                <label for="urgency">Urgency:</label>
+                <select id="urgency" name="urgency" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                
+                <button type="submit">Submit Task</button>
+            </form>
+        </section>
+
+        <section id="view-tasks">
+            <h2>Available Tasks</h2>
+            <ul id="taskList">
+                <!-- Tasks will be dynamically loaded here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>
